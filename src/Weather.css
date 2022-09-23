@@ -1,0 +1,76 @@
+.Weather .overview {
+  padding: 10px 10px;
+  text-align: left;
+}
+
+.Weather .sub-overview {
+  padding: 0px 20px;
+}
+
+.Weather #current-date {
+  font-size: 18px;
+  color: #303841;
+  padding-top: 20px;
+  line-height: 10px;
+  opacity: 0.9;
+}
+
+.Weather #weather-description {
+  font-size: 20px;
+  line-height: 20px;
+  color: #47555e;
+}
+
+.Weather .wind-speed {
+  font-size: 12px;
+  color: #303841;
+  opacity: 0.5;
+}
+
+.Weather .overview-weather {
+  text-align: right;
+  padding: 20px 50px 0px 0;
+}
+
+.Weather #todays-temp {
+  font-size: 52px;
+  line-height: 1;
+}
+
+.Weather .units {
+  position: relative;
+  font-size: 16px;
+  top: -30px;
+}
+
+.Weather #fahrenheit,
+#celsius {
+  text-decoration: none;
+  color: black;
+}
+
+.Weather #fahrenheit:hover,
+#celsius:hover {
+  text-decoration: none;
+  color: #394a51;
+  cursor: default;
+}
+
+.Weather .today-weather-icon {
+  font-size: 80px;
+}
+
+.Weather .container .weather-search {
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.Weather #search-city-button {
+  display: inline-block;
+  margin: 0px 0px 0px -15px;
+}
+
+.Weather #current-location-button {
+  display: inline-block;
+  margin: 0px -40px 0px 0px;
+}
