@@ -7,7 +7,7 @@
   padding: 0px 20px;
 }
 
-.Weather #current-date {
+.Weather .current-date {
   font-size: 18px;
   color: #303841;
   padding-top: 20px;
@@ -15,7 +15,7 @@
   opacity: 0.9;
 }
 
-.Weather #weather-description {
+.Weather .weather-description {
   font-size: 20px;
   line-height: 20px;
   color: #47555e;
@@ -32,7 +32,7 @@
   padding: 20px 50px 0px 0;
 }
 
-.Weather #todays-temp {
+.Weather .todays-temp {
   font-size: 52px;
   line-height: 1;
 }
@@ -43,14 +43,14 @@
   top: -30px;
 }
 
-.Weather #fahrenheit,
-#celsius {
+.Weather .fahrenheit,
+.celsius {
   text-decoration: none;
   color: black;
 }
 
-.Weather #fahrenheit:hover,
-#celsius:hover {
+.Weather .fahrenheit:hover,
+.celsius:hover {
   text-decoration: none;
   color: #394a51;
   cursor: default;
@@ -65,12 +65,12 @@
   margin: auto;
 }
 
-.Weather #search-city-button {
+.Weather .search-city-button {
   display: inline-block;
   margin: 0px 0px 0px -15px;
 }
 
-.Weather #current-location-button {
+.Weather .current-location-button {
   display: inline-block;
   margin: 0px -40px 0px 0px;
 }
