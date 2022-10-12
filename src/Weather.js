@@ -4,7 +4,6 @@ import WeatherInfo from "./WeatherInfo";
 
 import "./App.css";
 import "./Weather.css";
-import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
