@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Search from "./Search";
 import WeatherInfo from "./WeatherInfo";
 
 import "./App.css";
 import "./Weather.css";
+import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 
 export default function Weather(props) {
+  const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
@@ -22,9 +23,18 @@ export default function Weather(props) {
     });
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
+  function handleCityChange(event) {
+    setCity(event.target.value);
+  }
+
   function search() {
     const apiKey = "d1be4136ed4955ecd4ad578e1cdcae10";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -34,7 +44,38 @@ export default function Weather(props) {
         <div className="card">
           <div className="card-body full-app">
             <WeatherInfo data={weatherData} />
-            <Search />
+            <div className="container Search">
+              <form onSubmit={handleSubmit} className="city-search-form">
+                <div className="row">
+                  <div className="col-2">
+                    <input
+                      type="button"
+                      value="📍"
+                      className="btn btn-warning current-location-button"
+                    />
+                  </div>
+                  <div className="col-8">
+                    <input
+                      type="search"
+                      className="form-control w-100 search-text-input"
+                      placeholder="Enter a city"
+                      autocomplete="off"
+                      autofocus="on"
+                      aria-label="search"
+                      onChange={handleCityChange}
+                    />
+                  </div>
+                  <div className="col-2">
+                    <button
+                      type="submit"
+                      className="btn btn-primary search-city-button"
+                    >
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
