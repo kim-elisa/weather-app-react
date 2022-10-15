@@ -37,23 +37,11 @@
   line-height: 1;
 }
 
-.Weather .units {
+.Weather .unit {
   position: relative;
   font-size: 16px;
   top: -30px;
-}
-
-.Weather .fahrenheit,
-.celsius {
-  text-decoration: none;
   color: black;
-}
-
-.Weather .fahrenheit:hover,
-.celsius:hover {
-  text-decoration: none;
-  color: #394a51;
-  cursor: default;
 }
 
 .Weather .today-weather-icon {
