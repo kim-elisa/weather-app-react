@@ -42,7 +42,9 @@ export default function Weather(props) {
       <div className="container Weather">
         <div className="card">
           <div className="card-body full-app">
-            <WeatherInfo data={weatherData} />
+            <div>
+              <WeatherInfo data={weatherData} />
+            </div>
             <div className="container Search">
               <form onSubmit={handleSubmit} className="city-search-form">
                 <div className="row">
@@ -65,12 +67,11 @@ export default function Weather(props) {
                     />
                   </div>
                   <div className="col-2">
-                    <button
+                    <input
                       type="submit"
+                      value="Search"
                       className="btn btn-primary search-city-button"
-                    >
-                      Search
-                    </button>
+                    />
                   </div>
                 </div>
               </form>
