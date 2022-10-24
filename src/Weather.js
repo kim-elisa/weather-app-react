@@ -45,7 +45,7 @@ export default function Weather(props) {
             <div>
               <WeatherInfo data={weatherData} />
             </div>
-            <div className="container Search">
+            <div className="container">
               <form onSubmit={handleSubmit} className="city-search-form">
                 <div className="row">
                   <div className="col-2">
@@ -59,11 +59,11 @@ export default function Weather(props) {
                     <input
                       type="search"
                       className="form-control w-100 search-text-input"
+                      onChange={handleCityChange}
                       placeholder="Enter a city"
                       autocomplete="off"
                       autofocus="on"
                       aria-label="search"
-                      onChange={handleCityChange}
                     />
                   </div>
                   <div className="col-2">
