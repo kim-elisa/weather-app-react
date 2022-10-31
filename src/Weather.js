@@ -6,6 +6,7 @@ import WeatherForecast from "./WeatherForecast";
 import "./App.css";
 import "./Weather.css";
 import "./WeatherForecast.css";
+import "./WeatherForecastDay.css";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
