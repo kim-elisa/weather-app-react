@@ -3,3 +3,7 @@
   font-size: 10px;
   top: -5px;
 }
+
+.WeatherForecastDay .WeatherForecast-icon {
+  font-size: 42px;
+}

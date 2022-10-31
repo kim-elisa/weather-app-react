@@ -53,17 +53,10 @@ export default function Weather(props) {
             <div className="container">
               <form onSubmit={handleSubmit} className="city-search-form">
                 <div className="row">
-                  <div className="col-2">
-                    <input
-                      type="button"
-                      value="📍"
-                      className="btn btn-warning current-location-button"
-                    />
-                  </div>
-                  <div className="col-8">
+                  <div className="col-9">
                     <input
                       type="search"
-                      className="form-control w-100 search-text-input"
+                      className="form-control w-100"
                       onChange={handleCityChange}
                       placeholder="Enter a city"
                       autocomplete="off"
@@ -71,11 +64,11 @@ export default function Weather(props) {
                       aria-label="search"
                     />
                   </div>
-                  <div className="col-2">
+                  <div className="col-3">
                     <input
                       type="submit"
                       value="Search"
-                      className="btn btn-primary search-city-button"
+                      className="btn btn-primary w-100 search-city-button"
                     />
                   </div>
                 </div>
