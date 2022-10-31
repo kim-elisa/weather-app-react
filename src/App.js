@@ -7,26 +7,25 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Weather defaultCity="Tokyo" />
-
-        <footer>
-          <a
-            href="https://github.com/kim-elisa/weather-app-react"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open source code
-          </a>{" "}
-          {""}
-          by {""}
-          <a
-            href="https://github.com/kim-elisa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Kim E Munnery
-          </a>
-        </footer>
       </div>
+      <footer>
+        <a
+          href="https://github.com/kim-elisa/weather-app-react"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open source code
+        </a>{" "}
+        {""}
+        by {""}
+        <a
+          href="https://github.com/kim-elisa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Kim E Munnery
+        </a>
+      </footer>
     </div>
   );
 }

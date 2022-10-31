@@ -20,6 +20,18 @@ h3:first-letter {
   text-transform: capitalize;
 }
 
+footer {
+  padding-top: 10px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: orange;
+}
+
 .card {
   display: block;
   margin: 0 auto;
