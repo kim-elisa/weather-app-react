@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 import "./App.css";
 import "./Weather.css";
+import "./WeatherForecast.css";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -44,6 +46,7 @@ export default function Weather(props) {
           <div className="card-body full-app">
             <div>
               <WeatherInfo data={weatherData} />
+              <WeatherForecast />
             </div>
             <div className="container">
               <form onSubmit={handleSubmit} className="city-search-form">

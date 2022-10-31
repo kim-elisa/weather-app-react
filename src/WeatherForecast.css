@@ -1,0 +1,14 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast-temp-min {
+  opacity: 0.6;
+  margin-left: 5px;
+}
+
+.WeatherForecast .unit {
+  position: relative;
+  font-size: 10px;
+  top: -5px;
+}
