@@ -44,36 +44,34 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="container Weather">
-        <div className="card">
-          <div className="card-body full-app">
-            <div>
-              <WeatherInfo data={weatherData} />
-              <WeatherForecast coordinates={weatherData.coordinates} />
-            </div>
-            <div className="container">
-              <form onSubmit={handleSubmit} className="city-search-form">
-                <div className="row">
-                  <div className="col-9">
-                    <input
-                      type="search"
-                      className="form-control w-100"
-                      onChange={handleCityChange}
-                      placeholder="Enter a city"
-                      autocomplete="off"
-                      autofocus="on"
-                      aria-label="search"
-                    />
-                  </div>
-                  <div className="col-3">
-                    <input
-                      type="submit"
-                      value="Search"
-                      className="btn btn-primary w-100 search-city-button"
-                    />
-                  </div>
+        <div className="full-app">
+          <div>
+            <WeatherInfo data={weatherData} />
+            <WeatherForecast coordinates={weatherData.coordinates} />
+          </div>
+          <div className="container">
+            <form onSubmit={handleSubmit} className="city-search-form">
+              <div className="row">
+                <div className="col-9">
+                  <input
+                    type="search"
+                    className="form-control w-100"
+                    onChange={handleCityChange}
+                    placeholder="Enter a city"
+                    autocomplete="off"
+                    autofocus="on"
+                    aria-label="search"
+                  />
                 </div>
-              </form>
-            </div>
+                <div className="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    className="btn btn-primary w-100 search-city-button"
+                  />
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

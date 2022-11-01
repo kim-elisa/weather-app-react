@@ -2,7 +2,7 @@ body {
   text-align: center;
   display: block;
   margin: 0 auto;
-  width: 720px;
+  max-width: 720px;
   padding: 20px;
   font-family: "Ubuntu", sans-serif;
 }
@@ -22,6 +22,7 @@ h3:first-letter {
 
 footer {
   padding-top: 10px;
+  font-size: 14px;
 }
 
 footer a {
@@ -32,15 +33,20 @@ footer a:hover {
   color: orange;
 }
 
-.card {
-  display: block;
-  margin: 0 auto;
-  border: 20px;
-}
-
 .full-app {
   padding-bottom: 20px;
   box-shadow: 8px 6px 6px #47555e;
   background: #a7bcb9;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+  .full-app {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
 }

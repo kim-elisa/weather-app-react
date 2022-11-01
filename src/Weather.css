@@ -8,12 +8,12 @@
 }
 
 .Weather .overview {
-  padding: 10px 10px;
+  padding: 20px 0px 10px 20px;
   text-align: left;
 }
 
 .Weather .sub-overview {
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .Weather .current-date {
@@ -32,7 +32,7 @@
 
 .Weather .overview-weather {
   text-align: right;
-  padding: 20px 50px 0px 0;
+  padding: 20px 30px 10px 0;
 }
 
 .Weather .todays-temp {
@@ -48,7 +48,7 @@
 }
 
 .Weather .today-weather-icon {
-  font-size: 100px;
+  padding-right: 10px;
 }
 
 .Weather .city-search-form {
