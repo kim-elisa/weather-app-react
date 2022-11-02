@@ -5,6 +5,7 @@ import WeatherForecast from "./WeatherForecast";
 
 import "./App.css";
 import "./Weather.css";
+import "./WeatherInfo.css";
 import "./WeatherForecast.css";
 import "./WeatherForecastDay.css";
 

@@ -25,8 +25,8 @@ export default function WeatherForecastDay(props) {
       <div className="WeatherForecast-day">{day()}</div>
       <div className="WeatherForecast-icon">
         <img
-          src={props.data.weather.icon}
-          alt={props.data.weather.description}
+          src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
+          alt={props.data.weather[0].description}
         />
       </div>
       <div className="WeatherForecast-temperatures">

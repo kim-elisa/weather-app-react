@@ -1,9 +1,20 @@
+.WeatherForecastDay img {
+  height: 80px;
+  width: auto;
+}
+
+.WeatherForecastDay {
+  padding-top: 20px;
+}
 .WeatherForecastDay .unit {
   position: relative;
   font-size: 10px;
   top: -5px;
 }
 
-.WeatherForecastDay .WeatherForecast-icon {
-  font-size: 36px;
+@media only screen and (max-width: 576px) {
+  .WeatherForecastDay {
+    font-size: 16px;
+    padding-top: 10px;
+  }
 }
