@@ -36,12 +36,7 @@ footer a:hover {
 .full-app {
   padding-bottom: 20px;
   box-shadow: 8px 6px 6px #47555e;
-  background: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
-    radial-gradient(
-      91% 146%,
-      rgba(255, 255, 255, 0.5) 47%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   border-radius: 5px;
 }
 
